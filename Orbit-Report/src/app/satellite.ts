@@ -1,3 +1,5 @@
+import { read } from "fs";
+
 export class Satellite {
     name: string;
     orbitType: string;
@@ -14,8 +16,10 @@ export class Satellite {
     }
 
     shouldShowWarning(){
-        if  (this.type.toLowerCase === "space debris"){
-            
+        if (this.type.toLowerCase() === "space debris") {
+            return true;
+        } else {
+            return false;
         }
     }
 }
