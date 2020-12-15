@@ -1,5 +1,3 @@
-import { read } from "fs";
-
 export class Satellite {
     name: string;
     orbitType: string;
